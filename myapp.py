@@ -28,9 +28,6 @@ def get_todos():
     resp.header['Content-Type'] = 'application/json'
     return resp
 
-@app.route('/foo/<name>')
-def foo(name):
-    return render_template('index.html',to=name)
 
 if __name__ == '__main__':
     port = os.environ.get("PORT",5000)
